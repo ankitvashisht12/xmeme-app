@@ -2,6 +2,10 @@
 
 cd ./meme-stream-backend/
 
-# Setup DB or any other environment variables you want to setup.
+# Start mongo daemon service
+sudo service start mongod
+
+# install npm packages
 npm install
 npm start
+
