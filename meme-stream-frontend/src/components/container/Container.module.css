@@ -1,0 +1,21 @@
+.Container {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 700px) {
+	.Container {
+		flex-direction: row-reverse;
+		height: 85vh;
+		width: 80%;
+		overflow: hidden;
+	}
+}
+
+@media (min-width: 1050px) {
+	.Container {
+		width: 62%;
+		flex-direction: row;
+		flex-direction: row-reverse;
+	}
+}

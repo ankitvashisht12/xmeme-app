@@ -1,0 +1,83 @@
+.Feed {
+	border-radius: 10px;
+	margin: 10px 0;
+	padding: 10px;
+	background-color: #5f5b5b;
+}
+
+.Feed > h3 {
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.FeedHeader {
+	display: flex;
+	justify-content: space-between;
+}
+
+.FeedHeader > h2 {
+	color: #ffffff;
+	font-size: 1em;
+	align-items: center;
+}
+
+.FeedHeader > button {
+	margin: 8px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	outline: none;
+
+}
+
+.FeedHeader > button:hover{
+	cursor: pointer;
+}
+
+.FeedImage {
+	background-size: cover;
+	border: 1px solid black;
+	background-repeat: no-repeat;
+	max-width: 400px;
+}
+
+.FeedImage > img{
+	width: 100%;
+}
+
+.EditForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+.Input {
+	margin: 5px 0;
+}
+
+.Input > input {
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+}
+
+.Button {
+	margin-top: 5px;
+	background-color: green;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	color: #ffffff;
+}
+ 
+.Button:hover{
+	background-color: rgb(32, 165, 120);
+	cursor: pointer;
+	font-weight: bold;
+
+}
+

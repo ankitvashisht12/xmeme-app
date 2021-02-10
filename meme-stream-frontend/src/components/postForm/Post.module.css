@@ -1,0 +1,75 @@
+.Post {
+	width: 90vw;
+	margin: 10px;	
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #393737;
+}
+
+.Post > h2 {
+	text-align: center;
+	color: #ffffff;
+	font-size: 1em;
+}
+
+.Form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.Input {
+	margin: 5px 0;
+}
+
+.Input > input {
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+}
+
+.Button {
+	margin-top: 5px;
+	background-color: aqua;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+ 
+.Button:hover{
+	background-color: aquamarine;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.ErrorMsg {
+	text-align: center;
+	padding:10px;
+	background-color: rgb(243, 44, 44);
+	margin: 20px;
+	color: #ffffff;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+
+/* Tablet */
+@media (min-width: 700px) {
+
+		.Post {
+			height: 80vh;
+			width: 30%;
+		}
+
+
+}
+
+/* Desktop */
+@media (min-width: 1050px) {
+
+	.Post {
+			width: 40%;
+		}
+}

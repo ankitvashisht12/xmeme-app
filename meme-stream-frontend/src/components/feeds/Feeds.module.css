@@ -1,0 +1,55 @@
+.Feeds {
+	background-color: #393737;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	height: 80vh;
+	overflow-y: scroll;
+}
+
+.FeedsHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	flex-direction: row;
+
+}
+.FeedsHeader > h2 {
+	text-align: center;
+	width: 100%;
+	font-size: 1em;
+	color: #ffffff;
+}
+
+.FeedsHeader > button {
+	justify-self: end;
+	border-radius: 50%;
+	height: 2rem;
+	width: 2rem;
+	overflow: hidden;
+	display: inline-block;
+	outline: none;
+}
+
+.FeedsHeader > button:hover{
+	cursor: pointer;
+}
+
+.MemeFeeds {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media (min-width: 500px) {
+	.Feeds {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1050px){
+	.Feeds {
+		width: 100%;
+	}
+}
