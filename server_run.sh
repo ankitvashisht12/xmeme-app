@@ -3,7 +3,10 @@
 cd ./meme-stream-backend/
 
 # Start mongo daemon service
-sudo service start mongod
+sudo service mongod start 
+
+# sleep for 10 sec
+sleep 10
 
 # install npm packages
 npm install
