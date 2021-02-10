@@ -22,13 +22,13 @@ const Post = ({getData}) => {
 	
 	
 	const validInputs = (name, caption, url) => {
-		if(!caption)
+		if(!name || !url || !caption)
 			return false;
 
-		let nameCheck = /^[A-Z,a-z].*$/;
-		let urlCheck = /^http[s]?:\/\/.+$/;
-		if(!nameCheck.test(name) || !urlCheck.test(url))
-			return false;
+		//let nameCheck = /^[A-Z,a-z].*$/;
+		//let urlCheck = /^http[s]?:\/\/.+$/;
+		//if(!nameCheck.test(name) || !urlCheck.test(url))
+		//	return false;
 		return true;
 	}
 	
@@ -40,7 +40,7 @@ const Post = ({getData}) => {
 				caption,
 				url: imgUrl
 			}
-			axios.post('http://localhost:5343/memes', data)
+			axios.post('/memes', data)
 					.then(res => {
 						getData();
 						setName('');

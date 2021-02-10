@@ -24,7 +24,7 @@ const Feed = ({getData, id, name, url, caption}) => {
 	const editFormHandler = async (e, id) => {
 		e.preventDefault();
 		try{
-			await axios.patch(`http://localhost:5343/memes/${id}`, {
+			await axios.patch(`/memes/${id}`, {
 					caption: newCaption,
 					url: newUrl
 			});

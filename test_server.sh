@@ -1,9 +1,13 @@
-i#!/bin/bash
+#!/bin/bash
 
 
 # git clone the repo
+sudo apt-get install git
+
+git clone git@gitlab.crio.do:COHORT_ME_BUILDOUT_XMEME_ENROLL_1612436694845/ankitvashisht12-me_buildout_xmeme.git
 
 # cd to the cloned repo directory
+cd ankitvashisht12-me_buildout_xmeme
 
 
 # Run the user’s installation steps which will install any necessary dependencies required for the server to run, with sudo permission
@@ -38,7 +42,7 @@ curl --location --request GET 'http://localhost:8081/memes'
 
 # Execute the POST /memes endpoint using curl
 
-curl --location --request POST 'http://<Server_URL>/memes' \
+curl --location --request POST 'http://localhost:8081/memes' \
 
 --header 'Content-Type: application/json' \
 
