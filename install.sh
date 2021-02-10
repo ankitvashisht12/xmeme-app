@@ -5,6 +5,7 @@
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install wget
+sudo apt-get install git
 
 ## mongo-db installation
 wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -   
