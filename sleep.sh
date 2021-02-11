@@ -4,4 +4,4 @@
 
 # Sleep for 60 seconds
 
-sleep 60
+sleep 100
