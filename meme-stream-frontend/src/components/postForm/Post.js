@@ -25,10 +25,10 @@ const Post = ({getData}) => {
 		if(!name || !url || !caption)
 			return false;
 
-		//let nameCheck = /^[A-Z,a-z].*$/;
-		//let urlCheck = /^http[s]?:\/\/.+$/;
-		//if(!nameCheck.test(name) || !urlCheck.test(url))
-		//	return false;
+		let nameCheck = /^[A-Z,a-z].*$/;
+		let urlCheck = /^http[s]?:\/\/.+$/;
+		if(!nameCheck.test(name) || !urlCheck.test(url))
+			return false;
 		return true;
 	}
 	
