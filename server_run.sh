@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ./meme-stream-backend/
+cd ./backend/
 
 # Start mongo daemon service
 sudo service mongod start 
